@@ -11,6 +11,8 @@ gem 'sqlite3'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'turbo-sprockets-rails3'
+
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
@@ -39,6 +41,7 @@ gem 'tr8n_client_sdk'
 
 # To use debugger
 # gem 'debugger'
+
 
 group :development do
   gem 'capistrano', '~> 2.11.2'

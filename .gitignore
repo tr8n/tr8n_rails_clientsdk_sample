@@ -6,6 +6,9 @@
 
 /.idea
 
+/public/__assets
+/public/assets
+
 # Ignore bundler config
 /.bundle
 
