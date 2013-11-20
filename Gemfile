@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+gem 'tr8n_core'
+gem 'tr8n_client_sdk'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

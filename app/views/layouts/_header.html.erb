@@ -1,0 +1,70 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/home">
+        <span class="h3"><%= tr("Tr8n Sample Application") %></span>
+      </a>
+
+       <ul class="nav">
+        <li class="<%= "active" if controller.controller_name.to_s == 'docs' and controller.action_name.to_s == 'installation' %>"><%=link_to(tr("Installation Instructions"), :controller => :docs, :action => :installation) %></li>
+        <li class="<%= "active" if controller.controller_name.to_s == 'docs' and controller.action_name.to_s == 'index' %>"><%=link_to(tr("Documentation & Samples"), :controller => :docs, :action => :index) %></li>
+        <li class="<%= "active" if controller.controller_name.to_s == 'docs' and controller.action_name.to_s == 'tml' %>"><%=link_to(tr("TML Interactive Console"), :controller => :docs, :action => :tml) %></li>
+      </ul>
+    
+      <ul class="nav pull-right">
+          <li>
+            <a href="#" onClick="Tr8n.UI.LanguageSelector.show(true)" class="dropdown-toggle" data-toggle="dropdown">
+              <%= image_tag(tr8n_current_language.flag_url, :style => "align:middle") %>
+              &nbsp; 
+              <%= tr8n_current_language.name %>
+            </a>
+          </li>
+          <% if tr8n_current_translator %>
+            <li class="dropdown">
+              <a id="user_menu_trigger" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <%=image_tag(tr8n_current_translator.mugshot_url, :style=>"max-width:16px;max-height:16px;padding:1px;border:1px solid #888;") %> &nbsp;
+                <%=tr8n_current_translator.name %>
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu pas">
+                <li role="presentation" class="text-center">
+                  <%=image_tag(tr8n_current_translator.mugshot_url, :style=>"width:80px;height:80px;border:1px solid #eee", :class=>"img-circle") %>
+                </li>
+                <li class="divider"></li>
+                <li><%= link_to_function tr("Notifications"), "Tr8n.UI.Lightbox.show('/tr8n/translator/notifications/lb_notifications', {width:600})" %></li>
+                <li><%= link_to_function tr("Toggle Inline Mode"), "Tr8n.UI.LanguageSelector.toggleInlineTranslations()" %></li>
+
+                <li class="divider"></li>
+                <li>
+                  <%=link_to(tr("Phrases"), "#{tr8n_application.host}/tr8n/app/phrases") %>
+                </li>
+                <li>
+                  <%=link_to(tr("Translations"), "#{tr8n_application.host}/tr8n/app/translations") %>
+                </li>
+
+                <li class="divider"></li>
+                <li><%= link_to_function tr("Shortcuts"), "Tr8n.UI.Lightbox.show('/tr8n/help/lb_shortcuts', {width:400})" %></li>
+
+                <li class="divider"></li>
+                <li><%=link_to_function(tr("Logout"), "Tr8n.UI.Lightbox.show('/login/out?mode=lightbox', {width:400});")%></li>
+              </ul>
+            </li>
+          <% else %>
+            <li><%=link_to_function(tr("Login"), "Tr8n.UI.Lightbox.show('/login/index?mode=lightbox', {width:550, height:500});")%></li>
+          <% end %>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%=render :partial => "/layouts/flashes" %>
+</div>
+
+
+<script>
+  $(function(){
+    $('#user_menu_trigger').dropdown();
+  });
+</script>
