@@ -39,3 +39,8 @@ gem 'tr8n_client_sdk'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'capistrano', '~> 2.11.2'
+  gem 'capistrano-ext'
+end

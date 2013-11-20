@@ -4,7 +4,7 @@ This is a sample application that uses tr8n_core and tr8n_rails_clientsdk. It sh
 
 The Tr8n service must be available and running in order for this sample application to work.
 
-You can use sandbox.tr8nhub.com or download and install the service locally by following these instructions:
+You can use http://sandbox.tr8nhub.com or download and install the service locally by following these instructions:
 
 ```sh
   $ git clone https://github.com/tr8n/tr8n.git
