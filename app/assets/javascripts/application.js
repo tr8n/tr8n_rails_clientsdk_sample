@@ -12,4 +12,7 @@
 //
 //= require jquery191
 //= require jquery-ui-1.10.3.custom.min
+//= require prism
+//= require prism_rails
+//= require jquery.tocify.min
 //= require bootstrap
