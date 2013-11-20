@@ -1,5 +1,4 @@
 require "bundler/capistrano"
-# require "whenever/capistrano"
 require 'capistrano/ext/multistage'
 
 set :stages, ["production"]
