@@ -10,7 +10,7 @@ defaults:
     enabled:      false
     path:         /log/tr8n.log
   cache:
-    enabled:      false
+    enabled:      true
     adapter:      memcache
     host:         localhost:11211
     path:         /cache
@@ -57,3 +57,9 @@ production:
     host:         http://sandbox.tr8nhub.com
     key:          37f812fac93a71088
     secret:       a9dc95ff798e6e1d1
+  cache:
+    enabled:      true
+    adapter:      memcache
+    host:         localhost:11211
+    version:      1
+    timeout:      3600

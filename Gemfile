@@ -25,24 +25,9 @@ end
 
 gem 'jquery-rails'
 
-gem 'tr8n_core'
-gem 'tr8n_client_sdk'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
-
+gem 'dalli'
+gem 'tr8n_core', '1.1.0'
+gem 'tr8n_client_sdk', '1.1.0'
 
 group :development do
   gem 'capistrano', '~> 2.11.2'
