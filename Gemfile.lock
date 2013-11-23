@@ -116,7 +116,7 @@ GEM
       rails (~> 3.2.13)
       sass
       tr8n_core
-    tr8n_core (1.1.0)
+    tr8n_core (1.1.1)
       faraday
     treetop (1.4.15)
       polyglot
@@ -146,7 +146,7 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   tr8n_client_sdk (= 1.1.0)
-  tr8n_core (= 1.1.0)
+  tr8n_core (= 1.1.1)
   turbo-sprockets-rails3
   uglifier (>= 1.0.3)
   unicorn
