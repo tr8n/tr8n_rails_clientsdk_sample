@@ -54,7 +54,7 @@ defaults:
 
 production:
   application:
-    host:         http://sandbox.tr8nhub.com
+    host:         https://sandbox.tr8nhub.com
     key:          37f812fac93a71088
     secret:       a9dc95ff798e6e1d1
   cache:
