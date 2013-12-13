@@ -30,6 +30,7 @@ gem 'tr8n_core', '1.1.1'
 gem 'tr8n_client_sdk', '1.1.0'
 
 group :development do
+  gem 'rack-mini-profiler'
   gem 'capistrano', '~> 2.11.2'
   gem 'capistrano-ext'
 end
