@@ -4,13 +4,13 @@ defaults:
   default_level:  0
   application:
     host:         http://localhost:3000
-    key:          67d70a38e6be5756b
-    secret:       b617a552468e78008
+    key:          6b714be8673fcc4a3
+    secret:       5c873790ebdc7d7b8
   logger:
     enabled:      false
     path:         /log/tr8n.log
   cache:
-    enabled:      true
+    enabled:      false
     adapter:      memcache
     host:         localhost:11211
     path:         /cache
