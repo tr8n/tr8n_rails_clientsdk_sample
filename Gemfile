@@ -16,21 +16,24 @@ group :assets do
 
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
 
 gem 'dalli'
-gem 'tr8n_core', '1.1.1'
-gem 'tr8n_client_sdk', '1.1.0'
+gem 'tr8n_core', '1.1.3'
+gem 'tr8n_client_sdk', '1.1.1'
 
 group :development do
   gem 'rack-mini-profiler'
   gem 'capistrano', '~> 2.11.2'
   gem 'capistrano-ext'
+end
+
+group :development, :test do
+  gem "rspec", "~> 2.14.1"
+  gem "rspec-core", "~> 2.14.7"
+  gem "rspec-mocks", "~> 2.14.4"
+  gem 'rspec-rails'
 end
