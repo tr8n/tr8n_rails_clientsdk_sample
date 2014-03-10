@@ -19,20 +19,13 @@ To run this sample application, follow these steps:
 ```sh
   $ git clone https://github.com/tr8n/tr8n_rails_clientsdk_sample.git
   $ cd tr8n_rails_clientsdk_sample
-  $ bundle install
-  $ rake db:migrate
-```
-
-Make sure you edit the config/tr8n/config.yml file and provide the correct application key and secret for your application.
-
-Tr8n service is running at https://tr8nhub.com
-
-Now you can start the sample.
-
-```sh
-  $ rails s
+  $ bundle
+  $ bin/rails s
 ```
 
 Open your browser and point to:
 
   http://localhost:3000
+
+
+This application is running at http://rails.tr8nhub.com

@@ -7,7 +7,7 @@
 
 <div class="hero-unit">
     <div class="text-center">
-        <%= image_tag('tr8n/tr8n_logo.png') %>
+        <%= image_tag(tr8n_application.url_for('/assets/tr8n/tr8n_logo.png')) %>
     </div>
     <h2 class="text-center"><%= tr("Welcome to Tr8n For Ruby on Rails") %></h2>
     <p class="text-center">
@@ -28,10 +28,7 @@
     <div class="span4">
         <p class="text-center"><%= image_tag("how_it_works_1.gif") %></p>
         <h4 class="text-center"><%= tr("Use your users") %></h4>
-        <p>
-          <%= tr("Your multilngual users can sign up to help translate your site into over 270 different languages.")%>
-          <%= tr("Their translations can then be viewed and voted on by other users.") %>
-        </p>
+        <p><%= tr("Your multilngual users can sign up to help translate your site into over 270 different languages.")%> <%= tr("Their translations can then be viewed and voted on by other users.") %></p>
     </div>
     <div class="span4">
         <p class="text-center"><%= image_tag("how_it_works_2.gif") %></p>

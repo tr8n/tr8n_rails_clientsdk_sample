@@ -7,7 +7,7 @@
     <div class="span9">
       <div class="hero-unit" style="margin-right:10px;">
         <div class="text-center">
-          <%= image_tag('tr8n/tr8n_logo.png') %>
+          <%= image_tag(tr8n_application.url_for('/assets/tr8n/tr8n_logo.png')) %>
         </div>
         <h2 class="text-center"><%= tr("Tr8n Documentation & Samples") %></h2>
       </div>
@@ -543,6 +543,13 @@ tr("{actor} думает {target::pre}", {:actor => michael, :target => anna}, {
   </div>
 </div>
 
+<%= stylesheet_link_tag('jquery.tocify.css') %>
+<%= javascript_include_tag('jquery.tocify.min.js') %>
+
+<%= stylesheet_link_tag('prism.css') %>
+<%= stylesheet_link_tag('prism_rails.css') %>
+<%= javascript_include_tag('prism.js') %>
+<%= javascript_include_tag('prism_rails.js') %>
 
 <style>
   .example {

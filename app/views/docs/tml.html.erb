@@ -36,7 +36,7 @@
 
   <h4 style="display:inline-block;"><%= tr("Label (required, TML)") %></h4>
   <div class="dropdown" style="display:inline-block; padding-left:10px;">
-    <a id="samples_menu_trigger" href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <a id="user_menu_trigger" href="#" class="dropdown-toggle" data-toggle="dropdown">
       <%= tr("try some examples") %><b class="caret"></b>
     </a>
     <ul class="dropdown-menu pas" style="max-height:500px;overflow:auto;">
@@ -106,10 +106,10 @@
 
 <iframe id="tml_translations" name="tml_translations" src="/docs/tml_content" style="width:100%;height:600px;background:white;border:1px solid #eee;"></iframe>
 
-<%= javascript_include_tag("/ace/ace.js") %>
-<%= javascript_include_tag("/ace/theme-chrome.js") %>
-<%= javascript_include_tag("/ace/mode-html.js") %>
-<%= javascript_include_tag("/ace/mode-json.js") %>
+<%= javascript_include_tag("ace/ace.js") %>
+<%= javascript_include_tag("ace/theme-chrome.js") %>
+<%= javascript_include_tag("ace/mode-html.js") %>
+<%= javascript_include_tag("ace/mode-json.js") %>
 
 <style type="text/css" media="screen">
   .ace_editor {
@@ -123,10 +123,6 @@
 </style>
 
 <script>
-  $(function(){
-    $('#samples_menu_trigger').dropdown();
-  });
-
   var label_editor = ace.edit("tml_label_editor");
   label_editor.setTheme("ace/theme/chrome");
   label_editor.getSession().setMode("ace/mode/text");

@@ -27,10 +27,6 @@ class DocsController < ApplicationController
     
   end
 
-  def installation
-
-  end
-
   def tml
 
   end

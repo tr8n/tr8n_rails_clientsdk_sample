@@ -10,9 +10,6 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery191
-//= require jquery-ui-1.10.3.custom.min
-//= require prism
-//= require prism_rails
-//= require jquery.tocify.min
-//= require bootstrap
+//= require ./jquery191.js
+//= require ./jquery-ui-1.10.3.custom.min.js
+//= require ./bootstrap.js
