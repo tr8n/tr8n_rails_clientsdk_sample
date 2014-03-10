@@ -44,6 +44,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'unicorn'
+
 gem 'dalli'
 gem 'tr8n_client_sdk', '~> 4.0.2'
 
