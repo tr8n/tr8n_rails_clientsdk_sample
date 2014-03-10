@@ -177,6 +177,7 @@ DEPENDENCIES
   jquery-rails
   rack-mini-profiler
   rails (= 4.0.3)
+  rake
   rspec (~> 2.14.1)
   rspec-core (~> 2.14.7)
   rspec-mocks (~> 2.14.4)

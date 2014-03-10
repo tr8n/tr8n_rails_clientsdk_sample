@@ -54,6 +54,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'rake'
   gem "rspec", "~> 2.14.1"
   gem "rspec-core", "~> 2.14.7"
   gem "rspec-mocks", "~> 2.14.4"
