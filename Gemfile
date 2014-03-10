@@ -47,18 +47,14 @@ end
 gem 'dalli'
 gem 'tr8n_client_sdk', '~> 4.0.2'
 
-group :development do
-  gem 'rack-mini-profiler'
-  gem 'capistrano', '~> 2.11.2'
-  gem 'capistrano-ext'
-end
+gem 'rack-mini-profiler'
+gem 'capistrano', '~> 2.11.2'
+gem 'capistrano-ext'
 
-group :development, :test do
-  gem 'rake'
-  gem "rspec", "~> 2.14.1"
-  gem "rspec-core", "~> 2.14.7"
-  gem "rspec-mocks", "~> 2.14.4"
-  gem 'rspec-rails'
-  gem 'simplecov', '~> 0.7.1', :require => false
-  gem 'coveralls', :require => false
-end
+gem 'rake'
+gem "rspec", "~> 2.14.1"
+gem "rspec-core", "~> 2.14.7"
+gem "rspec-mocks", "~> 2.14.4"
+gem 'rspec-rails'
+gem 'simplecov', '~> 0.7.1', :require => false
+gem 'coveralls', :require => false
