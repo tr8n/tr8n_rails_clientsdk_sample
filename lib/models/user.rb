@@ -26,8 +26,13 @@ class User
   attr_reader :name, :gender
 
   def initialize(name, gender = "male")
-    @name = name
-    @gender = gender
+    if name.is_a?(Hash)
+      @name = name[:name]
+      @gender = name[:gender] || "male"
+    else
+      @name = name
+      @gender = gender
+    end
   end
 
   def to_s
