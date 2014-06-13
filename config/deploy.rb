@@ -4,7 +4,7 @@ require 'capistrano/ext/multistage'
 set :stages, ["production"]
 set :default_stage, "production"
 
-set :skip_assets, false
+set :skip_assets, true
 
 set :scm, "git"
 set :repository, "git@github.com:tr8n/tr8n_rails_clientsdk_sample.git"
