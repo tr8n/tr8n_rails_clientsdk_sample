@@ -1,8 +1,8 @@
 Tr8n.configure do |config|
   config.application = {
       :host => "https://sandbox.tr8nhub.com",
-      :key => "577fdeb280372b87c",
-      :secret => "77a71ca7e10434777"
+      :key => "37f812fac93a71088",
+      :secret => "a9dc95ff798e6e1d1"
   }
   #config.application = {
   #    :host => "http://localhost:3000",
