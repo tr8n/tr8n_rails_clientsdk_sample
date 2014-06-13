@@ -16,3 +16,4 @@
 //= require ./prism.js
 //= require ./prism_rails.js
 //= require ./jquery.tocify.min.js
+//= require ./chosen.jquery.js

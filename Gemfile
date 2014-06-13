@@ -47,11 +47,14 @@ end
 gem 'unicorn'
 
 gem 'dalli'
-gem 'tr8n_client_sdk', '~> 4.0.2'
 
-# gem 'tr8n_core', :path => '../tr8n_ruby_core'
+gem 'tr8n_client_sdk', '~> 4.0.7'
 
-gem 'rack-mini-profiler'
+#gem 'tr8n_core', :path => '../tr8n_ruby_core'
+#gem 'tr8n_client_sdk', :path => '../tr8n_rails_clientsdk'
+
+#gem 'rack-mini-profiler'
+
 gem 'capistrano', '~> 2.11.2'
 gem 'capistrano-ext'
 

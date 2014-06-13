@@ -33,4 +33,8 @@ class HomeController < ApplicationController
     redirect_to(request.env['HTTP_REFERER'])
   end
 
+  def test
+    render layout:false
+  end
+
 end

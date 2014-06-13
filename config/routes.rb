@@ -11,6 +11,8 @@ Tr8nRailsClientsdkSample::Application.routes.draw do
   get 'home/index'
   get 'home/upgrade_cache'
 
+  get 'home/test'
+
   get 'docs/index'
   get 'docs/tml'
   get 'docs/tml_content'

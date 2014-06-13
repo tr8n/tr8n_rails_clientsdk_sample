@@ -21,6 +21,8 @@
 
    options = params[:tml_options].blank? ? "{}" : params[:tml_options]
    options = JSON.parse(options)
+
+   options[:locale] = params[:tml_locale] || tr8n_current_language.locale
 %>
 
 <div style="padding:15px;">
