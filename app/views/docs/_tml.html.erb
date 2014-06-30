@@ -243,11 +243,11 @@ tr("Invite", "An invitation you received from your friend")</code></pre>
 
 <div class="example">
   <div class="title"><%=tr('example')%></div>
-        <pre class="code"><code class="language-ruby">tr("{user|| @michael: родился, @anna: родилась, other: родился/лась} в Ленинграде.",
+        <pre class="code"><code class="language-ruby">tr("{user|| male: родился, female: родилась, other: родился/лась} в Ленинграде.",
           {:user => @michael}, {:locale => 'ru'}
 )</code></pre>
   <div class="content">
-    <%=tr("{user|| @michael: родился, @anna: родилась, other: родился/лась} в Ленинграде.", {:user => @michael}, {:locale => 'ru'}) %>
+    <%=tr("{user|| male: родился, female: родилась, other: родился/лась} в Ленинграде.", {:user => @michael}, {:locale => 'ru'}) %>
   </div>
 </div>
 
