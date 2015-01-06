@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', '~> 1.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -55,13 +55,13 @@ gem 'tr8n_client_sdk', '~> 4.2'
 
 #gem 'rack-mini-profiler'
 
-gem 'capistrano', '~> 2.11.2'
-gem 'capistrano-ext'
+gem 'capistrano', '~> 3.2'
+gem 'capistrano-ext', '~> 1.2'
 
 gem 'rake'
-gem "rspec", "~> 2.14.1"
-gem "rspec-core", "~> 2.14.7"
-gem "rspec-mocks", "~> 2.14.4"
+gem "rspec", "~> 3.0"
+gem "rspec-core", "~> 3.0"
+gem "rspec-mocks", "~> 3.0"
 gem 'rspec-rails'
-gem 'simplecov', '~> 0.7.1', :require => false
+gem 'simplecov', '~> 0.8', :require => false
 gem 'coveralls', :require => false
