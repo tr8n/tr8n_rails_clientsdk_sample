@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag(tr8n_url_tag("/assets/tml/console.css")) %>
+<%= stylesheet_link_tag(tr8n_url_tag("tml/console.css")) %>
 
 <div class="tr8n tr8n_container" <%=tr8n_dir_attribute_tag%>>
 
@@ -104,9 +104,9 @@
 
 </div>
 
-<%=javascript_include_tag(tr8n_url_tag("/assets/tml/console.js")) %>
+<%=javascript_include_tag(tr8n_url_tag("tml/console.js")) %>
 <% ["en-US", "ru"].each do |locale| %>
-  <%=javascript_include_tag(tr8n_url_tag("/assets/tml/samples/#{locale}.js")) %>
+  <%=javascript_include_tag(tr8n_url_tag("tml/samples/#{locale}.js")) %>
 <% end %>
 
 

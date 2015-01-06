@@ -1,8 +1,8 @@
 Tr8n.configure do |config|
   config.application = {
-      :host => "https://sandbox.tr8nhub.com",
-      :key => "37f812fac93a71088",
-      :secret => "a9dc95ff798e6e1d1"
+    host: 'http://localhost:3000',
+    key: 'e9f98513e9d32e5b8a4dada73f57bba3c6c38e8417b4e83794c32a72cb08cdf8',
+    secret: '3a11dcde8488f9f1df0d46a69642e9d1123b6214a011ef00f528a89983ade0d2'
   }
   #config.application = {
   #    :host => "http://localhost:3000",
@@ -13,6 +13,7 @@ Tr8n.configure do |config|
       :enabled  => true,
       :adapter  => 'memcache',
       :host     => 'localhost:11211',
+      :namespace  => 'e9f98513e9d32e5b8a4dada73f57bba3c6c38e8417b4e83794c32a72cb08cdf8',
       :version  => 1,
       :timeout  => 3600
   }

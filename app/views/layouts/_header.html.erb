@@ -17,25 +17,17 @@
           <% if tr8n_current_translator %>
             <li class="dropdown">
               <a id="user_menu_trigger" href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <%=image_tag(tr8n_current_translator.mugshot_url, :style=>"max-width:16px;max-height:16px;padding:1px;border:1px solid #888;") %> &nbsp;
+                <%=image_tag(tr8n_current_translator.image_url, :style=>"max-width:16px;max-height:16px;padding:1px;border:1px solid #888;") %> &nbsp;
                 <%=tr8n_current_translator.name %>
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu pas">
                 <li role="presentation" class="text-center">
-                  <%=image_tag(tr8n_current_translator.mugshot_url, :style=>"width:80px;height:80px;border:1px solid #eee", :class=>"img-circle") %>
+                  <%=image_tag(tr8n_current_translator.image_url, :style=>"width:80px;height:80px;border:1px solid #eee", :class=>"img-circle") %>
                 </li>
                 <li class="divider"></li>
-                <li><%= link_to(tr("Notifications"), "#", :onClick =>  "Tr8n.UI.Lightbox.show('/tr8n/translator/notifications/lb_notifications', {width:600})") %></li>
-                <li><%= link_to(tr("Toggle Inline Mode"), "#", :onClick =>  "Tr8n.UI.LanguageSelector.toggleInlineTranslations()") %></li>
+                <li><%= link_to(tr("Toggle Inline Mode"), "#", :onClick =>  "Tr8n.Utils.toggleInlineTranslations()") %></li>
 
-                <li class="divider"></li>
-                <li>
-                  <%=link_to(tr("Phrases"), "#{tr8n_application.host}/tr8n/app/phrases") %>
-                </li>
-                <li>
-                  <%=link_to(tr("Translations"), "#{tr8n_application.host}/tr8n/app/translations") %>
-                </li>
 
                 <li class="divider"></li>
                 <li><%= link_to(tr("Shortcuts"), "#", :onClick => "Tr8n.UI.Lightbox.show('/tr8n/help/lb_shortcuts', {width:400})") %></li>
@@ -44,11 +36,11 @@
                 <% end %>
 
                 <li class="divider"></li>
-                <li><%=link_to(tr("Logout"), "#", :onClick => "Tr8n.UI.Lightbox.show('/login/out?mode=lightbox', {width:400});")%></li>
+                <li><%=link_to(tr("Logout"), "#", :onClick => "Tr8n.Utils.logout();")%></li>
               </ul>
             </li>
           <% else %>
-            <li><%=link_to(tr("Login"), "#", :onClick => "Tr8n.UI.Lightbox.show('/login/index?mode=lightbox', {width:550, height:500});")%></li>
+            <li><%=link_to(tr("Login"), "#", :onClick => "Tr8n.Utils.login();") %></li>
           <% end %>
       </ul>
 

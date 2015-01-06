@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -48,7 +48,7 @@ gem 'unicorn'
 
 gem 'dalli'
 
-gem 'tr8n_client_sdk', '~> 4.0.7'
+gem 'tr8n_client_sdk', '~> 4.2'
 
 #gem 'tr8n_core', :path => '../tr8n_ruby_core'
 #gem 'tr8n_client_sdk', :path => '../tr8n_rails_clientsdk'
