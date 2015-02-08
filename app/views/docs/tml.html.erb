@@ -1,6 +1,7 @@
-<%= stylesheet_link_tag(tr8n_url_tag("tml/console.css")) %>
+<%= stylesheet_link_tag("tml/console.css") %>
+<%= javascript_include_tag("chosen.jquery.js") %>
 
-<div class="tr8n tr8n_container" <%=tr8n_dir_attribute_tag%>>
+<div class="tml tml_container" <%=tml_dir_attribute_tag%>>
 
   <%=form_tag("/docs/tml_content", :method => :get, :id => :tml_form, :target => :tml_translations) do %>
     <input type="hidden" id="tml_label" name="tml_label" value="">
@@ -10,7 +11,7 @@
 
     <div style="padding-top:15px;">
       <div style="float:right; padding-top:10px;">
-        <%= select_tag(:tml_locale, options_for_select(tr8n_application.languages.collect{|lang| [lang.english_name, lang.locale]}, tr8n_current_language.locale)) %>
+        <%= select_tag(:tml_locale, options_for_select(tml_application.languages.collect{|lang| [lang.english_name, lang.locale]}, tml_current_language.locale)) %>
       </div>
 
       <h4 style="display:inline-block;"><%= tr("Label") %></h4>
@@ -77,10 +78,10 @@
 
   <iframe id="tml_translations" name="tml_translations" src="/docs/tml_content" style="width:100%;height:500px;background:white;border:1px solid #eee;"></iframe>
 
-  <%= javascript_include_tag("/ace/ace.js") %>
-  <%= javascript_include_tag("/ace/theme-chrome.js") %>
-  <%= javascript_include_tag("/ace/mode-html.js") %>
-  <%= javascript_include_tag("/ace/mode-json.js") %>
+  <%= javascript_include_tag("ace/ace.js") %>
+  <%= javascript_include_tag("ace/theme-chrome.js") %>
+  <%= javascript_include_tag("ace/mode-html.js") %>
+  <%= javascript_include_tag("ace/mode-json.js") %>
 
   <script>
     var label_editor = ace.edit("tml_label_editor");
@@ -99,14 +100,14 @@
     options_editor.setTheme("ace/theme/chrome");
     options_editor.getSession().setMode("ace/mode/json");
 
-    var currentLocale = "<%=tr8n_current_language.locale%>";
+    var currentLocale = "<%=tml_current_language.locale%>";
   </script>
 
 </div>
 
-<%=javascript_include_tag(tr8n_url_tag("tml/console.js")) %>
+<%=javascript_include_tag("tml/console.js") %>
 <% ["en-US", "ru"].each do |locale| %>
-  <%=javascript_include_tag(tr8n_url_tag("tml/samples/#{locale}.js")) %>
+  <%=javascript_include_tag("tml/samples/#{locale}.js") %>
 <% end %>
 
 

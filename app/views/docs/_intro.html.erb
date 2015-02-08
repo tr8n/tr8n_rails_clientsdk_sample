@@ -9,7 +9,7 @@
   <%= tr("Add the following gem to your [bold: Gemfile]:")%>
 </p>
 
-<pre><code class="language-ruby">gem 'tr8n_client_sdk'</code></pre>
+<pre><code class="language-ruby">gem 'tml_client_sdk'</code></pre>
 
 <p>
   <%= tr("Install the gem by running the bundle command:") %>
@@ -17,9 +17,9 @@
 
 <pre><code class="language-ruby">$ bundle</code></pre>
 
-<%= tr("Create an initializer [bold: tr8n.rb] and add the following configuration:") %>
+<%= tr("Create an initializer [bold: tml.rb] and add the following configuration:") %>
 
-<pre><code class="language-ruby">Tr8n.configure do |config|
+<pre><code class="language-ruby">Tml.configure do |config|
   config.application = {
     :key => YOUR_APP_KEY,
     :secret => YOUR_APP_SECRET
@@ -38,13 +38,13 @@ end</code></pre>
   <%= tr("In the [bold: head] section of your layout, add:") %>
 </p>
 
-<pre><code class="language-ruby">&lt;%= tr8n_scripts_tag %&gt;</code></pre>
+<pre><code class="language-ruby">&lt;%= tml_scripts_tag %&gt;</code></pre>
 
-<p><%= tr("You are done, tr8n is now running in your app.") %></p>
+<p><%= tr("You are done, tml is now running in your app.") %></p>
 
 <p><%= tr("Now you can simply add the default language selector anywhere on your page using:") %></p>
 
-<pre><code class="language-ruby">&lt;%= tr8n_language_selector_tag %&gt;</code></pre>
+<pre><code class="language-ruby">&lt;%= tml_language_selector_tag %&gt;</code></pre>
 
 
 <h2><%= tr("Setup") %></h2>

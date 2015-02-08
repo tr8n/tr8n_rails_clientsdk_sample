@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/environment.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/application.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/application.rb": [
         1,
         null,
         1,
@@ -55,13 +55,13 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/boot.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/boot.rb": [
         null,
         1,
         null,
         1
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/environments/test.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/environments/test.rb": [
         1,
         null,
         null,
@@ -99,7 +99,7 @@
         1,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/backtrace_silencers.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -108,13 +108,13 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/filter_parameter_logging.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/inflections.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -132,14 +132,14 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/mime_types.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/secret_token.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -153,12 +153,12 @@
         null,
         1
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/session_store.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/initializers/wrap_parameters.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -174,7 +174,7 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/config/routes.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/config/routes.rb": [
         1,
         null,
         null,
@@ -243,11 +243,11 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/app/helpers/application_helper.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/app/controllers/docs_controller.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/app/controllers/docs_controller.rb": [
         null,
         null,
         null,
@@ -287,7 +287,7 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/app/controllers/application_controller.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -301,7 +301,7 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/spec/app/controllers/home_controller_spec.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/spec/app/controllers/home_controller_spec.rb": [
         1,
         null,
         1,
@@ -321,7 +321,7 @@
         null,
         null
       ],
-      "/Users/michael/Projects/Tr8n/tr8n_rails_clientsdk_sample/app/controllers/home_controller.rb": [
+      "/Users/michael/Projects/Tr8n/tml_rails_clientsdk_sample/app/controllers/home_controller.rb": [
         null,
         null,
         null,

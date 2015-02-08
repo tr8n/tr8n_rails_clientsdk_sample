@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Tr8nRailsClientsdkSample::Application.config.secret_key_base = '75f783dd4c913246685b06cc7980383323f562c2761c9d5476a683100d263d06a5c9090e07a59154ff717e07c4e7be8c9a0373823ba25c0938f75ebcf37aec57'
+TmlRailsSample::Application.config.secret_key_base = '75f783dd4c913246685b06cc7980383323f562c2761c9d5476a683100d263d06a5c9090e07a59154ff717e07c4e7be8c9a0373823ba25c0938f75ebcf37aec57'

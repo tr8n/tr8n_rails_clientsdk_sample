@@ -1,14 +1,14 @@
 <p align="center">
-  <img src="https://raw.github.com/tr8n/tr8n/master/doc/screenshots/tr8nlogo.png">
+  <img src="https://raw.github.com/tml/tml/master/doc/screenshots/tmllogo.png">
 </p>
 
 Tr8n Client SDK Sample Application
 ==================================
-[![Build Status](https://travis-ci.org/tr8n/tr8n_rails_clientsdk_sample.png?branch=master)](https://travis-ci.org/tr8n/tr8n_rails_clientsdk_sample)
-[![Coverage Status](https://coveralls.io/repos/tr8n/tr8n_rails_clientsdk_sample/badge.png)](https://coveralls.io/r/tr8n/tr8n_rails_clientsdk_sample)
+[![Build Status](https://travis-ci.org/tml/tml_rails_clientsdk_sample.png?branch=master)](https://travis-ci.org/tml/tml_rails_clientsdk_sample)
+[![Coverage Status](https://coveralls.io/repos/tml/tml_rails_clientsdk_sample/badge.png)](https://coveralls.io/r/tml/tml_rails_clientsdk_sample)
 [![Dependency Status](https://www.versioneye.com/user/projects/52e4c5edec13750d0c000015/badge.png)](https://www.versioneye.com/user/projects/52e4c5edec13750d0c000015)
 
-This sample application uses tr8n_core and tr8n_rails_clientsdk gems to show some of the Tr8n's capabilities.
+This sample application uses tml_core and tml_rails_clientsdk gems to show some of the Tr8n's capabilities.
 
 
 Running this sample
@@ -17,8 +17,8 @@ Running this sample
 To run this sample application, follow these steps:
 
 ```sh
-  $ git clone https://github.com/tr8n/tr8n_rails_clientsdk_sample.git
-  $ cd tr8n_rails_clientsdk_sample
+  $ git clone https://github.com/tml/tml_rails_clientsdk_sample.git
+  $ cd tml_rails_clientsdk_sample
   $ bundle
   $ bin/rails s
 ```
@@ -28,7 +28,7 @@ Open your browser and point to:
   http://localhost:3000
 
 
-This application is running at http://rails.tr8n.io
+This application is running at http://rails.tml.io
 
 
 Links
@@ -36,11 +36,11 @@ Links
 
 * Register at TranslationExchange.com: https://translationexchange.com
 
-* Visit Rails Interactive Documentation: http://rails.tr8n.io
+* Visit Rails Interactive Documentation: http://rails.tml.io
 
-* Read TranslationExchange documentation: http://wiki.tr8n.io
+* Read TranslationExchange documentation: http://wiki.tml.io
 
-* Visit TranslationExchange blog: http://blog.tr8n.io
+* Visit TranslationExchange blog: http://blog.tml.io
 
 * Follow TranslationExchange on Twitter: https://twitter.com/translationx
 

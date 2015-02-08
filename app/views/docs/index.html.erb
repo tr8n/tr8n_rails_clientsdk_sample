@@ -7,7 +7,7 @@
 <div class="span9">
 <div class="hero-unit" style="margin-right:10px;">
   <div class="text-center">
-    <%= image_tag(tr8n_url_tag('/tools/logo.png')) %>
+    <img class="trex_logo" src="" alt="" />
   </div>
   <h2 class="text-center"><%= tr("Documentation & Samples") %></h2>
 </div>
@@ -225,12 +225,12 @@ end</code></pre>
 <div class="example">
   <div class="title"><%=tr('example')%></div>
   <pre class="code"><code class="language-ruby">
-&lt;%= tr8n_with_options_tag(:source => :sample_source) do %&gt;
+&lt;%= tml_with_options_tag(:source => :sample_source) do %&gt;
   &lt;%= tr("Hello World") %&gt;
 &lt;% end %&gt;
   </code></pre>
   <div class="content">
-    <%= tr8n_with_options_tag(:source => :sample_source) do %>
+    <%= tml_with_options_tag(:source => :sample_source) do %>
       <%= tr("Hello World") %>
     <% end %>
   </div>
@@ -243,12 +243,12 @@ end</code></pre>
 <div class="example">
   <div class="title"><%=tr('example')%></div>
   <pre class="code"><code class="language-ruby">
-&lt;%= tr8n_with_options_tag(:locale => 'ru') do %&gt;
+&lt;%= tml_with_options_tag(:locale => 'ru') do %&gt;
   &lt;%= tr("Привет Мир") %&gt;
 &lt;% end %&gt;
   </code></pre>
   <div class="content">
-    <%= tr8n_with_options_tag(:locale => 'ru') do %>
+    <%= tml_with_options_tag(:locale => 'ru') do %>
       <%= tr("Привет Мир") %>
     <% end %>
   </div>
@@ -261,12 +261,12 @@ end</code></pre>
 <div class="example">
   <div class="title"><%=tr('example')%></div>
   <pre class="code"><code class="language-ruby">
-&lt;%= tr8n_with_options_tag(:level => 1000) do %&gt;
+&lt;%= tml_with_options_tag(:level => 1000) do %&gt;
   &lt;%= tr("Terms of Service") %&gt;
 &lt;% end %&gt;
   </code></pre>
   <div class="content">
-    <%= tr8n_with_options_tag(:level => 1000) do %>
+    <%= tml_with_options_tag(:level => 1000) do %>
       <%= tr("Terms of Service") %>
     <% end %>
   </div>

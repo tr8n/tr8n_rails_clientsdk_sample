@@ -1,5 +1,5 @@
 #--
-# Copyright (c) 2010-2013 Michael Berkovich, tr8nhub.com
+# Copyright (c) 2010-2013 Michael Berkovich, tmlhub.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -24,15 +24,20 @@
 class DocsController < ApplicationController
   
   def index
-    
+  end
+
+  def installation
   end
 
   def tml
-
   end
 
   def tml_content
     render :layout => false
+  end
+
+  def editor
+
   end
 
 end

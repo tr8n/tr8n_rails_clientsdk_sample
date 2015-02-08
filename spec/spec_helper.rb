@@ -15,8 +15,8 @@ require 'rspec/rails'
 require 'rspec/autorun'
 
 require 'json'
-require 'tr8n_core'
-require 'tr8n_client_sdk'
+require 'tml_core'
+require 'tml_client_sdk'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.

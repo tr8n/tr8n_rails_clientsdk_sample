@@ -6,18 +6,21 @@
 </style>
 
 <div class="hero-unit">
-    <div class="text-center">
-      <%= image_tag(tr8n_url_tag('/tools/logo.png')) %>
+  <div class="text-center">
+      <img class="trex_logo" src="" alt="" />
+      <br><br>
     </div>
-    <h2 class="text-center"><%= tr("Welcome to Tr8n For Ruby on Rails") %></h2>
+    <h2 class="text-center">
+      <%= tr("Welcome to Tml For Ruby on Rails") %>
+    </h2>
     <p class="text-center">
-        <%= tr("Tr8n for Ruby on Rails is a Client SDK library that allows RoR based applications to integrate with the Tr8n crowd-sourced translation platform.") %>
-        <%= tr("This sample application demonstrates some of Tr8n's capabilities.") %>
+        <%= tr("Tml for Ruby on Rails is a library that allows RoR based applications to integrate with the Translation Exchange crowd-sourced translation platform.") %>
+        <%= tr("This sample application demonstrates some of Tml's capabilities.") %>
     </p>
     <br>
-    <% unless tr8n_current_translator %>
+    <% unless tml_current_translator %>
         <p class="text-center">
-            <a href="<%=tr8n_application.host%>/signup" class="btn btn-large"><%= tr("Sign up to get started now!") %></a>
+            <a href="https://dashboard.translationexchange.com/signup" class="btn btn-large"><%= tr('Sign up to get started now!') %></a>
         </p>
     <% end %>
 </div>
@@ -81,7 +84,7 @@
     </div>
     <div class="span4">
         <h4><%=tr("Language Context Rules") %></h4>
-        <p><%=tr("Tr8n supports all language rules to make translations very accurate.") %></p>
+        <p><%=tr("Tml supports all language rules to make translations very accurate.") %></p>
     </div>
     <div class="span4">
         <h4><%=tr("Language Cases") %></h4>

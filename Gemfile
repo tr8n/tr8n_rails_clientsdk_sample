@@ -48,10 +48,8 @@ gem 'unicorn'
 
 gem 'dalli'
 
-gem 'tr8n_client_sdk', '~> 4.2'
+gem 'tml-rails', '~> 4.3'
 
-#gem 'tr8n_core', :path => '../tr8n_ruby_core'
-#gem 'tr8n_client_sdk', :path => '../tr8n_rails_clientsdk'
 
 #gem 'rack-mini-profiler'
 

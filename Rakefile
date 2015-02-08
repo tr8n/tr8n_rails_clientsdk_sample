@@ -3,7 +3,7 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Tr8nRailsClientsdkSample::Application.load_tasks
+TmlRailsSample::Application.load_tasks
 
 
 require 'rspec/core/rake_task'

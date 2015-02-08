@@ -7,7 +7,7 @@ set :default_stage, "production"
 set :skip_assets, true
 
 set :scm, "git"
-set :repository, "git@github.com:tr8n/tr8n_rails_clientsdk_sample.git"
+set :repository, "git@github.com:tml/tml_rails_clientsdk_sample.git"
 set :branch, "master"
 set :git_enable_submodules, 1
 set :nginx_port, 80

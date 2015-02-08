@@ -6,7 +6,7 @@
 
 <h2><%=tr("Basics") %></h2>
 
-<%= tr("Tr8n Client SDK extends Controller and View helpers by providing a translation function, called \"tr\".") %>
+<%= tr("Tml Client SDK extends Controller and View helpers by providing a translation function, called \"tr\".") %>
 
 <%= tr("The function can be called using any of the following ways:") %>
 
@@ -22,15 +22,15 @@
 
 <%= tr("Alternatively, you can use string extensions:") %>
 
-<pre><code class="language-ruby">"some text".translate(tokens = {}, options = {}, language = Tr8n.session.current_language)
-"some text".translate(description, tokens = {}, options = {}, language = Tr8n.session.current_language)
+<pre><code class="language-ruby">"some text".translate(tokens = {}, options = {}, language = Tml.session.current_language)
+"some text".translate(description, tokens = {}, options = {}, language = Tml.session.current_language)
 </code></pre>
 
 
-<%= tr("Tr8n provides a number of helper methods that are available in views and controllers:") %>
+<%= tr("Tml provides a number of helper methods that are available in views and controllers:") %>
 
-<pre><code class="language-ruby">tr8n_current_language.translate(label, description, tokens = {}, options = {})
-tr8n_application.language('ru').translate(label, description, tokens = {}, options = {})
+<pre><code class="language-ruby">tml_current_language.translate(label, description, tokens = {}, options = {})
+tml_application.language('ru').translate(label, description, tokens = {}, options = {})
 </code></pre>
 
 <p>
@@ -56,7 +56,7 @@ tr8n_application.language('ru').translate(label, description, tokens = {}, optio
 <p>
   <%=tr("The description of a phrase is not mandatory, but it should be used in cases when the label alone is not sufficient enough to determine the meaning of the sentence being translated.") %>
   <%=tr("As a general rule, you should always provide description to words, phrases and sentences that are only meaningful within a specific context.") %>
-  <%=tr("Tr8n uses label and description together to create a unique key for each phrase.") %>
+  <%=tr("Tml uses label and description together to create a unique key for each phrase.") %>
   <%=tr("The description serves two purposes: it creates a unique key for each label and it also gives a hint to the translators for the context in which the label is used.") %>
 </p>
 
@@ -243,11 +243,11 @@ tr("Invite", "An invitation you received from your friend")</code></pre>
 
 <div class="example">
   <div class="title"><%=tr('example')%></div>
-        <pre class="code"><code class="language-ruby">tr("{user|| male: родился, female: родилась, other: родился/лась} в Ленинграде.",
+        <pre class="code"><code class="language-ruby">tr("{user|| @michael: родился, @anna: родилась, other: родился/лась} в Ленинграде.",
           {:user => @michael}, {:locale => 'ru'}
 )</code></pre>
   <div class="content">
-    <%=tr("{user|| male: родился, female: родилась, other: родился/лась} в Ленинграде.", {:user => @michael}, {:locale => 'ru'}) %>
+    <%=tr("{user|| @michael: родился, @anna: родилась, other: родился/лась} в Ленинграде.", {:user => @michael}, {:locale => 'ru'}) %>
   </div>
 </div>
 
@@ -323,11 +323,11 @@ tr("Invite", "An invitation you received from your friend")</code></pre>
 
 <div class="example">
   <div class="title"><%=tr('example')%></div>
-  <pre class="code"><code class="language-ruby">Tr8n.configure do |config|
+  <pre class="code"><code class="language-ruby">Tml.configure do |config|
   config.set_default_token(:custom, "&lt;span style='font-size:larger'&gt;{$0}&lt;/span&gt;", :decoration)
 end</code></pre>
   <%
-     Tr8n.configure do |config|
+     Tml.configure do |config|
       config.set_default_token(:custom, "<span style='font-size:larger'>{$0}</span>", :decoration)
      end
   %>
@@ -342,12 +342,12 @@ end</code></pre>
 
 <div class="example">
   <div class="title"><%=tr('example')%></div>
-  <pre class="code"><code class="language-ruby">Tr8n.configure do |config|
+  <pre class="code"><code class="language-ruby">Tml.configure do |config|
   config.set_default_token(:link, "&lt;a href='{$href}'&gt;{$0}&lt;/a&gt;", :decoration)
   config.set_default_token(:font, "&lt;span style='font-size:{$size};font-family:{$family};color:{$color}'&gt;{$0}&lt;/span&gt;", :decoration)
 end</code></pre>
   <%
-     Tr8n.configure do |config|
+     Tml.configure do |config|
        config.set_default_token(:link, "<a href='{$href}'>{$0}</a>", :decoration)
        config.set_default_token(:font, "<span style='font-family:{$family};font-size:{$size}pt;color:{$color}'>{$0}</span>", :decoration)
      end

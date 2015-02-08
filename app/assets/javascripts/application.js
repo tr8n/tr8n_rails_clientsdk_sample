@@ -13,7 +13,4 @@
 //= require ./jquery191.js
 //= require ./jquery-ui-1.10.3.custom.min.js
 //= require ./bootstrap.js
-//= require ./prism.js
-//= require ./prism_rails.js
-//= require ./jquery.tocify.min.js
 //= require ./chosen.jquery.js
