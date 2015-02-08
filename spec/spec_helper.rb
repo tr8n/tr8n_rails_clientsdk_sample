@@ -15,8 +15,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 
 require 'json'
-require 'tml_core'
-require 'tml_client_sdk'
+require 'tml-rails'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
@@ -54,12 +53,12 @@ end
 
 def init_application(locales = [], path = 'application.json')
   locales = ['en-US', 'ru'] if locales.size == 0
-  app = Tr8n::Application.new(load_json(path))
+  app = Tml::Application.new(load_json(path))
   locales.each do |locale|
-    app.add_language(Tr8n::Language.new(load_json("languages/#{locale}.json")))
+    app.add_language(Tml::Language.new(load_json("languages/#{locale}.json")))
   end
-  Tr8n.session.application = app
-  Tr8n.session.current_language = app.language('en-US')
+  Tml.session.application = app
+  Tml.session.current_language = app.language('en-US')
   app
 end
 

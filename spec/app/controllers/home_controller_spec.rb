@@ -8,7 +8,7 @@ describe HomeController, :type => :controller do
 
   describe "GET 'index'" do
     it "should be successful" do
-      Tr8n.session.with_block_options(:dry => true) do
+      Tml.session.with_block_options(:dry => true) do
         get :index
         expect(response).to be_success
       end
