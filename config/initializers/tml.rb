@@ -78,7 +78,7 @@ Tml.configure do |config|
   # For debugging, uncomment the following lines:
 
   config.logger  = {
-      :enabled  => true,
+      :enabled  => false,
       :path     => "#{Rails.root}/log/tml.log",
       :level    => 'debug'
   }
