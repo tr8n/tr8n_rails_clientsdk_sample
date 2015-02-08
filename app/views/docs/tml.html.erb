@@ -1,6 +1,3 @@
-<%= stylesheet_link_tag("tml/console.css") %>
-<%= javascript_include_tag("chosen.jquery.js") %>
-
 <div class="tml tml_container" <%=tml_dir_attribute_tag%>>
 
   <%=form_tag("/docs/tml_content", :method => :get, :id => :tml_form, :target => :tml_translations) do %>
@@ -78,10 +75,10 @@
 
   <iframe id="tml_translations" name="tml_translations" src="/docs/tml_content" style="width:100%;height:500px;background:white;border:1px solid #eee;"></iframe>
 
-  <%= javascript_include_tag("ace/ace.js") %>
-  <%= javascript_include_tag("ace/theme-chrome.js") %>
-  <%= javascript_include_tag("ace/mode-html.js") %>
-  <%= javascript_include_tag("ace/mode-json.js") %>
+  <%= javascript_include_tag("/ace/ace.js") %>
+  <%= javascript_include_tag("/ace/theme-chrome.js") %>
+  <%= javascript_include_tag("/ace/mode-html.js") %>
+  <%= javascript_include_tag("/ace/mode-json.js") %>
 
   <script>
     var label_editor = ace.edit("tml_label_editor");
@@ -105,9 +102,9 @@
 
 </div>
 
-<%=javascript_include_tag("tml/console.js") %>
+<%=javascript_include_tag("/tml/console.js") %>
 <% ["en-US", "ru"].each do |locale| %>
-  <%=javascript_include_tag("tml/samples/#{locale}.js") %>
+  <%=javascript_include_tag("/tml/samples/#{locale}.js") %>
 <% end %>
 
 
