@@ -35,7 +35,9 @@ I18n.backend = I18n::Backend::Tml.new
 
 Tml.configure do |config|
   config.application = {
-      token: '5f4ec93364b0bd70ecee17d4ea1bfb8d0d4a7764cbf3d77280c69f555f286454'
+      key:    '7f36a0b94ad8adaff5e786eb020fbb00b11c080ba4352fdaec6b63fe361195a2',
+      token: '5f4ec93364b0bd70ecee17d4ea1bfb8d0d4a7764cbf3d77280c69f555f286454',
+      host:  'https://staging-api.translationexchange.com'
   }
 
   config.cache = {
